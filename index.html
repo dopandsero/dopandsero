@@ -1,0 +1,22 @@
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<style>
+html,body{border:0px;padding:0px;margin:0px;width:100%;height:100%;}
+iframe{border:0px;padding:0px}
+#a {height:90%;width:100%}
+#b {position:fixed;left:0;bottom:0;height:10%;width:90%}
+#c {position:fixed;bottom:0;right:0;height:10%;width:10%}
+</style>
+
+<iframe id=a></iframe>
+<br><textarea id=b></textarea>
+<button id=c onclick="x=x+1;if(w==0){setTimeout(s,400);w=1}"></button> 
+
+
+
+<script>var t=u=v=w=x=y=z=0;
+
+
+function s(){if (x==1){a.srcdoc=b.value} else {t=prompt('save',0);if(x==2){localStorage.setItem(t,b.value)};if(x==3){b.value=localStorage.getItem(t)}};x=w=0};
+onload=b.value=localStorage.getItem(0);
+
+</script>
